@@ -42,6 +42,7 @@ class App extends Component {
         this.setState({
           smurfs: res.data
         });
+        this.props.history.push("/");
       })
       .catch(err => {
         console.log(err);
@@ -58,6 +59,7 @@ class App extends Component {
         this.setState({
           smurfs: res.data
         });
+        this.props.history.push("/");
       })
       .catch(err => {
         console.log(err);
