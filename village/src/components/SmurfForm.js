@@ -28,7 +28,7 @@ class SmurfForm extends React.Component {
     e.persist();
     let value = e.target.value;
     if (e.target.name === "age") {
-      value = parseInt(value);
+      value = parseInt(value, 10);
     }
     this.setState(prevState => ({
       smurf: {
