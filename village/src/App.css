@@ -89,7 +89,7 @@
 .smurf-form-container {
   margin-top: 140px;
   width: 50%;
-  height: 225px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -99,8 +99,28 @@
   background-color: lightskyblue;
 }
 
+.smurf-form-container button {
+  width: 75%;
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  margin-top: 15px;
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+}
+
+.smurf-form-container button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+  border: 2px solid red;
+}
+
 .smurf-form-header {
   color: red;
+  font-size: 2.4rem;
+  text-align: center;
 }
 
 .smurf-form {
@@ -113,8 +133,9 @@
 
 .smurf-form input {
   width: 90%;
-  height: 20px;
+  height: 25px;
   border-radius: 5px;
   margin: 5px 0;
   text-align: center;
+  font-size: 1.4rem;
 }
