@@ -54,6 +54,7 @@
   align-items: center;
   border-radius: 10px;
   border-bottom: 50px solid red;
+  padding-bottom: 30px;
 }
 
 .smurfs-header {
@@ -76,14 +77,36 @@
 }
 
 .smurf-card {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
   padding: 10px;
   margin: 10px 0;
   background-color: white;
   border-radius: 5px;
   border: 3px solid blue;
+}
+
+.delete-button {
+  width: 75%;
+  height: 35px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  margin-top: 15px;
+  background-color: blue;
+  color: white;
+  border: 2px solid white;
+}
+
+.delete-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: blue;
+  border: 2px solid red;
 }
 
 .smurf-form-container {
