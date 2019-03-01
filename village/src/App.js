@@ -48,6 +48,22 @@ class App extends Component {
       });
   };
 
+  deleteSmurf = (e, smurf) => {
+    console.log("The deleteSmurf() function is working!");
+    e.preventDefault();
+
+    axios 
+      .delete(`http://localhost:3333/smurfs/${smurf.id}`)
+      .then(res => {
+        this.setState({
+          smurfs: res.data
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  };
+
   render() {
     // console.log(this.state.smurfs);
     return (
@@ -77,6 +93,7 @@ class App extends Component {
             <Smurfs 
               {...props}
               smurfs={this.state.smurfs} 
+              deleteSmurf={this.deleteSmurf}
             />
           )}
         />
