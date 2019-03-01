@@ -40,23 +40,24 @@ class SmurfForm extends React.Component {
 
   render() {
     return (
-      <div className="SmurfForm">
-        <form onSubmit={this.handleSubmit}>
+      <div className="smurf-form-container">
+        <h2 className="smurf-form-header">Introduce a New Smurf to Smurf Village!</h2>
+        <form className="smurf-form" onSubmit={this.handleSubmit}>
           <input
             onChange={this.handleInputChange}
-            placeholder="name"
+            placeholder="Name"
             value={this.state.name}
             name="name"
           />
           <input
             onChange={this.handleInputChange}
-            placeholder="age"
+            placeholder="Age"
             value={this.state.age}
             name="age"
           />
           <input
             onChange={this.handleInputChange}
-            placeholder="height"
+            placeholder="Height"
             value={this.state.height}
             name="height"
           />
