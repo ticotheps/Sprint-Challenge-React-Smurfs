@@ -13,6 +13,7 @@ const Smurfs = (props) => {
                 id={smurf.id}
                 age={smurf.age}
                 height={smurf.height}
+                imageUrl={smurf.imageUrl}
                 key={smurf.id}
                 smurf={smurf}
                 deleteSmurf={props.deleteSmurf}

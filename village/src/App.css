@@ -78,7 +78,7 @@
 
 .smurf-card {
   width: 200px;
-  height: 200px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,6 +89,11 @@
   background-color: white;
   border-radius: 5px;
   border: 3px solid blue;
+}
+
+.smurf-card-image {
+  width: 125px;
+  height: auto;
 }
 
 .delete-button {
